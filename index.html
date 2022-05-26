@@ -11,8 +11,9 @@
 <body>
   <header class="page-header">
     <nav class="navigaion">
-      <a class="navigaion-logo" href="index.html"></a>
-      <img class="navigation-logo" src="" alt="Логотип Седоны">
+      <a class="navigaion-logo" href="index.html">
+        <img class="navigation-logo" src="#" alt="Логотип Седоны">
+      </a>
       <ul class=" navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="home.html">Главная</a>
@@ -110,47 +111,44 @@
       <button class="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     </section>
     <section class="newsletter">
-      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="newsletter-title">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <label for="newsletter-e-mail"></label>
-        <input class="email"="Ваш e-mail" type="e-mail" name="newsletter-e-mail" id="newsletter-e-mail" email>
+        <label for="newsletter-email">Email</label>
+        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+          required>
         <button class="button newsletter-button" type="submit">
-          <span class="visually-hidden">Подписаться</span>
+          <span class="visually-hidden">Отправить</span>
         </button>
       </form>
     </section>
     <footer class="footer-social">
-      <section class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">В Контакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграмм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="newsletter">
-        <address class="newsletter-phone">
-          <a class="phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
-        </address>
-      </section>
-      <section class="footer-page">
-        <address class="footer-item">
-          <a href="https://htmlacademy.ru"></a>
-          <img class="footer-logo" alt="Логотип Академиии">
-        </address>
-      </section>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">В Контакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <address class="newsletter-phone">
+        <a class="phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+      </address>
+
+      <address class="footer-item">
+        <a class="footer-logo" href=" https://htmlacademy.ru/">
+          <img class="footer-logo" src="#" alt="Логотип Академиии">
+        </a>
+      </address>
     </footer>
   </main>
 </body>
