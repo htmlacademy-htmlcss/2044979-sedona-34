@@ -226,29 +226,35 @@
           <a class="pagination-link pagination-current">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">...</a>
+          <a class="pagination-link pagination-current"></a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-current">10</a>
         </li>
-        <select name="select">
-          <option value="value1">4</option>
-        </select>
       </ul>
+      <section class="container">
+        <h2 class="visually-hidden">Количество гостиниц</h2>
+        <div class="dropdown">
+          <p class="container-description">Гостиниц на странице:</p>
+          <select name="one" class="dropdown-select">
+            <option value="">4</option>
+          </select>
+        </div>
+      </section>
+      <section class="newsletter">
+        <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="newsletter-title">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <label for="newsletter-email">Email</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+            required>
+          <button class="button newsletter-button" type="submit">
+            <span class="visually-hidden">Отправить</span>
+          </button>
+        </form>
+      </section>
     </section>
-    <section class="newsletter">
-      <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="newsletter-title">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <label for="newsletter-email">Email</label>
-        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-          required>
-        <button class="button newsletter-button" type="submit">
-          <span class="visually-hidden">Отправить</span>
-        </button>
-      </form>
-    </section>
-  </main>
+</main>
   <footer class="page-footer">
     <section class="footer-social">
       <h2 class="visually-hidden">Давайте дружить</h2>
