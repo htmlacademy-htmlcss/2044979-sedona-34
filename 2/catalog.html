@@ -23,7 +23,7 @@
           <a class="navigation-link" href="about.html">О нас</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="hotel.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-user">
@@ -69,7 +69,7 @@
     </header>
     <section class="catalog-products">
       <h2 class="visually-hidden">Сортировка</h2>
-      <form class="catalog-filter" action="#" method="get">
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -129,11 +129,11 @@
             </p>
             <p class="catalog-filter-title">
               <label class="form-label" for="catalog-filter"></label>
-              <input type="text" id="catalog-filter" name="appointment-price" placeholder="9000 до">
+              <input type="number" id="catalog-filter" name="appointment-price" placeholder="9000 до">
             </p>
           </fieldset>
           <button class="button" type="submit">ПРИМЕНИТЬ</button>
-          <button class="button" type="submit">Сбросить</button>
+          <button class="button" type="reset">Сбросить</button>
         </fieldset>
       </form>
     </section>
@@ -163,7 +163,7 @@
           </a>
           <p class="product-card">Гостиница</p>
           <p class="product-card"> От 4000 ₽</p>
-          <button class="button" type="submit">ПОДРОБНЕЕ</button>
+          <a class="navigation-link" href="#">ПОДРОБНЕЕ</a>
           <button class="button" type="submit">В ИЗБРАННОЕ</button>
           <p class="product-card">4 ЗВЕЗДЫ</p>
           <p class="product-card">Рейтинг: 8,5</p>
@@ -178,7 +178,7 @@
 
           <p class="product-card">Гостиница</p>
           <p class="product-card">От 5000 ₽</p>
-          <button class="button" type="submit">ПОДРОБНЕЕ</button>
+          <a class="navigation-link" href="#">ПОДРОБНЕЕ</a>
           <button class="button" type="submit">В ИЗБРАННОМ</button>
           <p class="product-card">4 ЗВЕЗДЫ</p>
           <p class="product-card">Рейтинг: 9,2</p>
@@ -192,7 +192,7 @@
           </a>
           <p class="product-card">Гостиница</p>
           <p class="product-card">От 2500 ₽</p>
-          <button class="button" type="submit">ПОДРОБНЕЕ</button>
+          <a class="navigation-link" href="#">ПОДРОБНЕЕ</a>
           <button class="button" type="submit">В ИЗБРАННОЕ</button>
           <p class="product-card">3 ЗВЕЗДЫ</p>
           <p class="product-card">Рейтинг: 6,9</p>
@@ -207,7 +207,7 @@
 
           <p class="product-card">Гостиница</p>
           <p class="product-card">От 1500 ₽</p>
-          <button class="button" type="submit">ПОДРОБНЕЕ</button>
+          <a class="navigation-link" href="#">ПОДРОБНЕЕ</a>
           <button class="button" type="submit">В ИЗБРАННОЕ</button>
           <p class="product-card">2 ЗВЕЗДЫ</p>
           <p class="product-card">Рейтинг: 5,0</p>
@@ -215,22 +215,24 @@
       </ul>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+          <a class="pagination-link">1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">2</a>
+          <a class="pagination-link">2</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">3</a>
+          <a class="pagination-link">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">4</a>
+          <a class="pagination-link">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-current"></a>
+          <a class="pagination-link pagination-next" href="...">
+            <span class="visually-hidden">...</span>
+          </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">10</a>
+          <a class="pagination-link">10</a>
         </li>
       </ul>
       <section class="container">
@@ -255,7 +257,7 @@
         </form>
       </section>
     </section>
-</main>
+  </main>
   <footer class="page-footer">
     <section class="footer-social">
       <h2 class="visually-hidden">Давайте дружить</h2>
