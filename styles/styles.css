@@ -99,15 +99,108 @@ body {
   text-transform: uppercase;
 }
 
-.main-index {
+.cover {
  color: #000000;
  background-color: #ffffff;
  background-image: url("../images/logo.jpg");
  background-size: 100%;
  background-repeat: no-repeat;
-  text-align: center;
+ text-align: center;
  height: 485px;
  width: 1200px;
 
 }
 
+.caption {
+  text-align: center;
+  color: #000000;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  }
+
+.advantages-list {
+  display:flex
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-description{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  }
+
+.advantages-item-sity {
+  background-color: #82B3D3;
+  }
+
+.advantages-item-home {
+background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-food {
+background-color: #ffffff;
+}
+
+.advantages-item-gift {
+background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-devils {
+background-color: #82B3D3;
+}
+
+.advantages-item-square {
+background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-road{
+background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-tourists{
+background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services-title-text {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  font-style: normal;
+ }
+
+.button-search{
+  font-family: 'PT Sans';
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background: #756157;
+  color: #ffffff;
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 36px;
+  width: 574px;
+  height: 60px;
+  border-radius: 4px;
+}
