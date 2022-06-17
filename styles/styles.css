@@ -150,7 +150,7 @@ p {
   flex-wrap: wrap;
   text-align: center;
   padding: 0;
-}
+  }
 
 .advantages-list{
   width: 100%;
@@ -159,10 +159,6 @@ p {
 
 div{
 flex-grow: 1;
-}
-
-.advantages-list{
-  width: 100%;
 }
 
 .container {
@@ -180,7 +176,7 @@ flex-grow: 1;
 .advantages-description{
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
+  weight: 400;
 }
 
 .advantages-item {
@@ -298,44 +294,47 @@ flex-grow: 1;
   color: #000000;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .footer-social-list {
-  text-align: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 116px;
+    height: 17px;
+    padding: 0px;
+    gap: 26px;
+    color: #000000;
+}
+
+.button-social {
   display: flex;
-  align-items: center;
-  width: 116px;
-  height: 17px;
-  padding: 0px;
-  gap: 26px;
-  color: #000000;
-  }
-
-.footer-social-vkontakte {
-  background-image: url("../images/vkontakte.svg");
-  line-height: 14px;
-  width: 24px;
-  color: #000000;
+  flex-wrap: wrap;
   background-repeat: no-repeat;
-  color: #83B3D3;
-}
-
-.footer-social-telegramm {
-  background-image: url("../images/telegram.svg");
-  width: 18px;
-  height: 16px;
-  color: #83B3D3;
-}
-
-.footer-social-youtube {
-  background-image: url("../images/youtube.svg");
   width: 22px;
   height: 17px;
   color: #83B3D3;
+  display: block;
+}
+
+.button-social-vkontakte {
+  background-image: url("../images/vkontakte.svg");
+}
+
+.button-social-telegramm {
+  background-image: url("../images/telegram.svg");
+}
+
+.button-social-youtube{
+  background-image: url("../images/youtube.svg");
 }
 
 .newsletter-phone {
   width: 720px;
   height: 50px;
-
 }
 
 .phone {
@@ -346,7 +345,7 @@ flex-grow: 1;
   font-weight: 400;
   text-align: center;
   color: #000000;
-}
+  }
 
 .footer-item {
   width: 115px;
