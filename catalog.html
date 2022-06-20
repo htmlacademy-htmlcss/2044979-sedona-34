@@ -164,8 +164,8 @@
             <p class="product-card-price"> От 4000 ₽</p>
             <a class="navigation-link-more" href="#">ПОДРОБНЕЕ</a>
             <button class="button-favorites" type="submit">В ИЗБРАННОЕ</button>
-            <p class="product-card">4 ЗВЕЗДЫ</p>
-            <p class="product-card">Рейтинг: 8,5</p>
+            <p class="product-star">4 ЗВЕЗДЫ</p>
+            <p class="product-raiting">Рейтинг: 8,5</p>
           </li>
         </ul>
         <ul class="product-class">
@@ -179,8 +179,8 @@
             <p class="product-card-price">От 5000 ₽</p>
             <a class="navigation-link-more" href="#">ПОДРОБНЕЕ</a>
             <button class="button-favorites" type="submit">В ИЗБРАННОМ</button>
-            <p class="product-card">4 ЗВЕЗДЫ</p>
-            <p class="product-card">Рейтинг: 9,2</p>
+            <p class="product-star">4 ЗВЕЗДЫ</p>
+            <p class="product-raiting">Рейтинг: 9,2</p>
           </li>
         </ul>
         <ul class="product-class">
@@ -193,8 +193,8 @@
             <p class="product-card-price">От 2500 ₽</p>
             <a class="navigation-link-more" href="#">ПОДРОБНЕЕ</a>
             <button class="button-favorites" type="submit">В ИЗБРАННОЕ</button>
-            <p class="product-card">3 ЗВЕЗДЫ</p>
-            <p class="product-card">Рейтинг: 6,9</p>
+            <p class="product-star">3 ЗВЕЗДЫ</p>
+            <p class="product-raiting">Рейтинг: 6,9</p>
           </li>
         </ul>
         <ul class="product-class">
@@ -207,92 +207,81 @@
             <p class="product-card-price">От 1500 ₽</p>
             <a class="navigation-link-more" href="#">ПОДРОБНЕЕ</a>
             <button class="button-favorites" type="submit">В ИЗБРАННОЕ</button>
-            <p class="product-card">2 ЗВЕЗДЫ</p>
-            <p class="product-card">Рейтинг: 5,0</p>
+            <p class="product-star">2 ЗВЕЗДЫ</p>
+            <p class="product-raiting">Рейтинг: 5,0</p>
           </li>
         </ul>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="...">
-              <span class="visually-hidden">...</span>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">10</a>
-          </li>
-        </ul>
-        <section class="container">
-          <h2 class="visually-hidden">Количество гостиниц</h2>
-          <div class="dropdown">
-            <p class="container-description">Гостиниц на странице:</p>
-            <select name="one" class="dropdown-select">
-              <option value="">4</option>
-            </select>
-          </div>
-        </section>
-        <section class="newsletter">
-          <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="newsletter-title">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <label for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
-            <button class="button newsletter-button" type="submit">
-              <span class="visually-hidden">Отправить</span>
-            </button>
-          </form>
-        </section>
-      </section>
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="button pagination-link pagination-active">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button pagination-link" href="#">10</a>
+            </li>
+          </ul>
+          <label class="sorting-caption" for="sorting-quantity">Гостиниц на странице</label>
+          <select class="sorting-select" name="sorting-quantity" id="sorting-quantity">
+            <option value="">4</option>
+            <option value="">8</option>
+            <option value="">12</option>
+          </select>
+        </div>
+    </div>
+    </section>
+    <section class="newsletter-catalog">
+      <h2 class="newsletter-catalog-title">Подпишитесь на рассылку</h2>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="newsletter-catalog-subtitle">Только полезная информация и никакого спама, <br>честное бойскаутское!
+        </p>
+        <label for="newsletter-email"></label>
+        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+          required>
+        <button class="newsletter-button">Подписаться</button>
+      </form>
+    </section>
+    </section>
     </div>
   </main>
-  <footer class="page-footer">
+  <footer class="footer-social">
     <div class="container">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Давайте дружить</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">В Контакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграмм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="newsletter">
-        <h2 class="visually-hidden">Позвони нам</h2>
-        <address class="newsletter-phone">
-          <a class="phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
-        </address>
-      </section>
-      <section class="footer-page">
-        <h2 class="visually-hidden">Логотип Аккадемии</h2>
-        <address class="footer-item">
-          <a class="footer-logo" href=" https://htmlacademy.ru/">
-            <img class="footer-logo" src="images/html1logo.svg" width="114.9" height="32.9" alt="Логотип Академиии">
+      <ul class="footer-social-list">
+        <li class="footer-social-vkontakte">
+          <a class="button-social button-social-vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">В Контакте</span>
           </a>
-        </address>
-      </section>
+        </li>
+        <li class="footer-social-telegramm">
+          <a class="button-social button-social-telegramm" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="footer-social-youtube">
+          <a class="button-social button-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <address class="newsletter-phone">
+        <a class="phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+      </address>
+      <address class="footer-item">
+        <a class="footer-logo" href=" https://htmlacademy.ru/">
+          <img class="footer-logo" src="images/html1logo.svg" width="115" height="33" alt="Логотип Академиии">
+        </a>
+      </address>
     </div>
   </footer>
 

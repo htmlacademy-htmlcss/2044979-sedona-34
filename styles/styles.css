@@ -252,6 +252,7 @@ flex-grow: 1;
   width: 1200px;
   height: 411px;
   justify-content: center;
+  background-repeat: no-repeat;
   }
 
 .newsletter-title {
@@ -285,7 +286,8 @@ flex-grow: 1;
   margin: 0 auto;
   justify-content: center;
   background: #82B3D3;
-  border: none
+  border: none;
+  border-radius: 4px;
   }
 
 .footer-social {
@@ -538,7 +540,6 @@ flex-grow: 1;
 }
 
 .product-class {
-  display: flex;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -558,12 +559,12 @@ flex-grow: 1;
 .product-card-price {
   width: 143px;
   height: 21px;
+  color: #333333;
 }
 
 .navigation-link-more {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
-  display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -584,7 +585,6 @@ flex-grow: 1;
 .button-favorites {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
-  display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -601,3 +601,71 @@ flex-grow: 1;
   border: none
 }
 
+.product-raiting {
+  display: flex;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background: #F2F2F2;
+  color: #333333;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+  justify-content: center;
+  border: none
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+.pagination-link {
+  display: flex;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background: #82B3D3;
+  color: #ffffff;
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 36px;
+  width: 55px;
+  height: 55px;
+  border-radius: 4px;
+  margin: 0 auto;
+  justify-content: center;
+  border: none
+}
+
+.pagination-active{
+  color: #000000;
+  background-color: #F2F2F2;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 4px;
+}
+
+.newsletter-catalog {
+  text-align: center;
+}
+
+.newsletter-catalog-title {
+  text-align: center;
+}
+
+.newsletter-catalog-subtitle {
+  color: #000000;
+
+}
