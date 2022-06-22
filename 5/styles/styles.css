@@ -322,7 +322,8 @@ body {
   border-radius: 4px;
   }
 
-.container {
+.page-footer-container {
+  display: flex;
   width: 1200px;
   margin: 0 auto;
 }
@@ -368,18 +369,15 @@ body {
   font-size: 40px;
   line-height: 40px;
   height: 50px;
+  width: 720px;
   text-decoration: none;
 
 }
 
 .phone {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 400;
-  text-align: center;
-  color: #000000;
- }
+   color: #000000;
+   text-decoration: none;
+}
 
 .footer-item {
   display: flex;
@@ -533,7 +531,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #000000;
 }
 
 .sorting-container {
@@ -544,7 +542,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  width: 287px;
   height: 48px;
 }
 
@@ -693,6 +690,11 @@ body {
   border: none
 }
 
+.pagination-container {
+  display: flex;
+}
+
+
 .pagination {
   display: flex;
   flex-wrap: wrap;
@@ -733,6 +735,21 @@ body {
   border-radius: 4px;
 }
 
+.sorting-quantity {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+  list-style: none;
+}
+
+.sorting-select {
+  width: 160px;
+  height: 48px;
+}
 
 .newsletter-catalog {
   text-align: center;
