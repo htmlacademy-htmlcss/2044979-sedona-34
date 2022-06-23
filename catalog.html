@@ -10,10 +10,10 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="container">
-      <nav class="navigaion">
-        <a class="navigaion-logo" href="index.html">
+  <div class="container">
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
           <img class="navigation-logo" src="images/logotip.svg" width="139" height="70" alt="Логотип Седоны">
         </a>
         <ul class=" navigation-list">
@@ -52,10 +52,8 @@
           </li>
         </ul>
       </nav>
-    </div>
-  </header>
-  <main class="main-inner">
-    <div class="container">
+    </header>
+    <main class="main-inner">
       <ul class="inner-header-filter">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -146,10 +144,16 @@
           <option value="select-control-cheap">Сначала популярные</option>
           <option value="select-control-expensive">Сначала дорогие</option>
         </select>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-cards"><a href="#"></a></li>
-          <li class="breadcrumb-list"><a href="#"></a></li>
-          <li class="breadcrumb-alone"><a href="#"></a></li>
+        <ol class="breadcrumb-view">
+          <li class="breadcrumb-switcer">
+            <a a class="breadcrumb-cards" href="#"></a>
+          </li>
+          <li class="breadcrumb-switcer">
+            <a a class="breadcrumb-list" href="#"></a>
+          </li>
+          <li class="breadcrumb-switcer">
+            <a a class="breadcrumb-alone" href="#"></a>
+          </li>
         </ol>
       </div>
       <section class="select-sorting" aria-label="Сортировка">
@@ -280,10 +284,8 @@
         </form>
       </section>
       </section>
-    </div>
-  </main>
-  <footer class="footer-social">
-    <div class="page-footer-container">
+    </main>
+    <footer class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-vkontakte">
           <a class="button-social button-social-vkontakte" href="https://vk.com/htmlacademy">
@@ -309,9 +311,8 @@
           <img class="footer-logo" src="images/html1logo.svg" width="115" height="33" alt="Логотип Академиии">
         </a>
       </address>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
 </body>
 
 </html>
