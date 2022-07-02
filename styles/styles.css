@@ -490,22 +490,6 @@ body {
   list-style: none;
 }
 
-.inner-header-filter {
-  background-image: url("../images/catalog-background.jpg");
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding: 35px 70px 70px;
-}
-
-.inner-header{
-  display: flex;
-  width: 500px;
-  height: 100px;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .inner-header-title {
   line-height: 78px;
   font-size: 60px;
@@ -550,13 +534,16 @@ body {
 }
 
 .catalog-products{
+  background-image: url("../images/catalog-background.jpg");
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   margin: 0;
-  width: 1199px;
+  width: 1200px;
+  background-repeat: no-repeat;
+  padding: 35px 70px 70px;
 }
 
 .catalog-filter {
@@ -760,33 +747,41 @@ body {
 }
 
 .hotel {
-  font-family: 'PT Sans', sans-serif;
   display: grid;
-  grid-template-columns: repeat(3, 340px);
-  list-style-type: none;
-  margin-left: 70px;
-  gap: 18px;
+  width: 1200px;
+  grid-template-columns: 340px 340px 340px;
+  margin: 0;
   margin-bottom: 66px;
-  margin-left: 73px;
+  gap: 18px;
+  margin-left: 70px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .product-class{
   display: grid;
   width: 340px;
   gap: 18px;
-  margin: 0;
 }
 
-.product-class {
+.product-card {
   padding: 20px;
 }
-
-.product-card{
-  display: grid;
+.product-card-link{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  color: #000000;
 }
 
 .product-card-image{
   display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 300px;
+  height: 211px;
 }
 
 .product-card-title {
@@ -806,7 +801,7 @@ body {
 .hotel-info {
   display: grid;
   grid-template-columns: 133px 143px;
-  gap: 25px;
+  gap: 16px;
 }
 
 .hotel-favorites {
@@ -825,6 +820,7 @@ body {
   line-height: 20px;
   height: 37px;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .button-favorites {
@@ -836,6 +832,7 @@ body {
   border: none;
   margin: 0;
   padding: 0;
+  border-radius: 4px;
 }
 
 .button-favorites-like {
@@ -847,29 +844,10 @@ body {
   line-height: 20px;
   justify-content: center;
   border: none;
+  border-radius: 4px;
 }
 
-.hotel-raiting {
-  display: grid;
-  gap: 6px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  grid-template-columns: 140px 140px;
-  align-items: center
-}
-
-.star-raiting {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 6px;
-  width: 140px;
-  height: 37px;
-  color: #ffffff;
-}
-
-.product-raiting {
+.rating {
   display: flex;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -886,7 +864,6 @@ body {
   border-radius: 4px;
   justify-content: center;
   border: none;
-  margin: 0;
 }
 
 .pagination-container {
