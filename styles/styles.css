@@ -510,7 +510,7 @@ body {
   background-repeat: no-repeat;
   width: 22px;
   height: 17px;
-  color: #83B3D3;
+  fill: #83B3D3;
   display: block;
 }
 
@@ -527,21 +527,25 @@ body {
   margin-right: 53px;
 }
 
-.phone {
-   color: #000000;
-   text-decoration: none;
-   margin-bottom: 35px;
-   margin-top: 45px;
+.footer-icon{
+  fill: #83B3D3;
 }
 
-.button-social:hover {
-  background-color: #68A2CA;
+.footer-icon:hover {
+  fill: #68A2CA;
 }
-.button-social:focus {
-  background-color: #68A2CA;
+.footer-icon:focus {
+  fill: #68A2CA;
 }
-.button-social:active {
-  background-color: rgba(104, 162, 202, 0.3)
+.footer-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.phone {
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 35px;
+  margin-top: 45px;
 }
 
 .phone:hover {
@@ -830,7 +834,7 @@ body {
 
 .toggle {
   border-radius: 4px;
-  color: #E5E5E5;
+  fill: #E5E5E5;
 }
 
 .toggle:hover {
