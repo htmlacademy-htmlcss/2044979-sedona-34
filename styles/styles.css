@@ -639,12 +639,40 @@ body {
   line-height: 21px;
 }
 
+.breadcrumbs-icon{
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-icon:hover{
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-icon:focus {
+  fill: #F2F2F2;
+}
+
+.breadcrumbs-icon:active {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
 .breadcrumbs-link {
   width: 73px;
   height: 21px;
   color: #FFFFFF;
   text-decoration: none;
   position: relative
+}
+
+.breadcrumbs-link:hover{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #F2F2F2;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link-icon {
