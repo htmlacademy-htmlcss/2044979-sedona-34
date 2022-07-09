@@ -736,7 +736,12 @@ body {
 }
 
 .control-input {
+  background-image: url("../images/check.svg");
   margin-bottom: 15px;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
 }
 
 .catalog-filter-list {
@@ -852,6 +857,7 @@ body {
 .select-control {
   width: 287px;
   height: 48px;
+  appearance: none;
   margin-right: 81px;
   margin-left: 191px;
   border-radius: 4px;
@@ -859,6 +865,14 @@ body {
   padding: 14px;
   padding-left: 19px;
 }
+
+.select-control-icon {
+  background-image: url("../images/vectortop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 254px;
+}
+
 
 .breadcrumb-view {
   padding: 0;
@@ -1201,6 +1215,7 @@ body {
 }
 
 .sorting-select {
+  appearance: none;
   width: 160px;
   height: 48px;
   border-radius: 4px;
@@ -1208,6 +1223,14 @@ body {
   padding: 14px;
   padding-left: 19px;
 }
+
+.sorting-select-icon{
+  background-image: url("../images/vectortop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 127px;
+}
+
 
 .newsletter-spam {
   font-size: 30px;
