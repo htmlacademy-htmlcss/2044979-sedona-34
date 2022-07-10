@@ -190,6 +190,82 @@
       </address>
     </footer>
   </div>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="position">
+            <p class="field-group auth-date">
+              <label class="long" for="auth-date">Дата заезда:</label>
+              <input class="auth-form-field" type="text" name="date-leaving" id="auth-date"
+                placeholder="27 апреля 2020">
+            </p>
+            <span class="text-form red">Мы не можем отправить вас в прошлое.</span>
+            <p class="field-group auth-date">
+              <label class="long" for="auth-date-leaving">Дата выезда:</label>
+              <input class="auth-form-field" type="text" name="date" id="auth-date-leaving"
+                placeholder="1 сентября 2021">
+            </p>
+            <span class="text-form">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="group-choice">
+            <p class="field-group">
+            <div class="adults">
+              <label class="information field-adults" for="adults">Взрослые:</label>
+              <button class="button button-minus" type="button">
+              </button>
+              <input class="form-field " type="text" name="adults" id="adults" placeholder="2">
+              <button class="button button-plus" type="button">
+              </button>
+            </div>
+            </p>
+            <p class="field-group">
+            <div class="child">
+              <span class="field-child">
+                <label class="information field-child" for="child">
+                  Дети:
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                </label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#a)" fill="#fff">
+                        <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M0 0h1v9H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
+                    будут
+                    с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <button class="button button-minus" type="button">
+              </button>
+              <input class="form-field " type="text" name="child" id="child" placeholder="1">
+              <button class="button button-plus" type="button">
+              </button>
+            </div>
+            </p>
+          </div>
+          <button class="button modal-submit" type="submit">Найти</button>
+
+        </form>
+
+      </section>
+
+
+    </div>
+  </div>
 </body>
 
 </html>
