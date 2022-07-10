@@ -29,14 +29,14 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-search" href="#">
+            <a class="navigation-link navigation-link-icon navigation-link-search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-favorite" href="#">
+            <a class="navigation-link navigation-link-icon navigation-link-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="like">12</span>
             </a>
@@ -61,7 +61,7 @@
                 viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="m.162 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"
-                  fill="" />
+                  fill="#" />
               </svg>
               <span class="visually-hidden">Главная</span>
             </a>
@@ -74,24 +74,27 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
           <div class="filter-group-list">
             <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
-                <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Бассейн">
-                    Бассейн
+                  <label class="control control-infrastructure">
+                    <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                    <span class="caption-mark"></span>
+                    <span class="caption-type">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Парковка">
-                    Парковка
+                  <label class="control control-infrastructure">
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="caption-mark"></span>
+                    <span class="caption-type">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
-                    Wi-Fi
+                  <label class="control control-infrastructure">
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <span class="caption-mark"></span>
+                    <span class="caption-type">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -101,46 +104,65 @@
               <ul class="catalog-filter-view">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Гостиница">
-                    Гостиница
+                    <input class="visually-hidden control-input housing-input" type="radio" name="housing" value="hotels"
+                      checked>
+                    <span class="caption-mark area"></span>
+                    <span class="caption-type">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Мотель" checked>
-                    Мотель
+                    <input class="visually-hidden control-input housing-input" type="radio" name="housing" value="motel">
+                    <span class="caption-mark area"></span>
+                    <span class="caption-type">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Апартаменты">
-                    Апартаменты
+                    <input class="visually-hidden control-input housing-input" type="radio" name="housing"
+                      value="apartments">
+                    <span class="caption-mark area"></span>
+                    <span class="caption-type">Апартаменты</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <fieldset class="catalog-filter-price">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <p class="catalog-filter-title">
-              <label class="form-label"></label>
-              <input type="number" id="form-label" name="appointment-price" placeholder="0 от">
-            </p>
-            <p class="catalog-filter-title">
-              <label class="form-label" for="catalog-filter"></label>
-              <input type="number" id="catalog-filter" name="appointment-price" placeholder="9000 до">
-            </p>
-          </fieldset>
-          <div class="button-filter">
-            <button class="button-social button-submit" type="submit">Применить</button>
-            <button class="button-reset" type="reset">Сбросить</button>
+          <div class="wrapper">
+            <fieldset class="catalog-filter-price">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <div class="range">
+                <div class="range-wrapper">
+                  <label class="form-label">
+                    <input class="range-input input-min" type="number" value="0" name="min-price">
+                  </label>
+                  <label class="form-label">
+                    <input class="range-input input-max" type="number" value="9000" name="max-price">
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="right: 61px; width: 228px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="button-filter">
+              <button class="button-social button-submit" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
+            </div>
           </div>
         </form>
       </section>
       <section class="catalog">
         <div class="sorting-container">
           <h2 class="inner-header-catalog">Найдено гостиниц: 38</h2>
-          <select class="select-control select-control-icon" aria-label="Сортировка">
+          <select class="select-control" aria-label="Сортировка">
             <option value="select-control-popular">Сначала дешёвые</option>
             <option value="select-control-cheap">Сначала популярные</option>
             <option value="select-control-expensive">Сначала дорогие</option>
@@ -264,7 +286,7 @@
             </li>
           </ul>
           <label class="sorting-quantity" for="sorting-quantity">Гостиниц на странице:</label>
-          <select class="sorting-select sorting-select-icon" name="sorting-quantity" id="sorting-quantity">
+          <select class="sorting-select" name="sorting-quantity" id="sorting-quantity">
             <option value="">4</option>
             <option value="">8</option>
             <option value="">12</option>
