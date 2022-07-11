@@ -1932,6 +1932,17 @@ color: #000000;
   cursor: pointer;
 }
 
+.sorting-select:hover,
+.sorting-select:focus {
+  border: 2px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.sorting-select:active {
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
 .newsletter-spam {
   font-size: 30px;
   line-height: 36px;
