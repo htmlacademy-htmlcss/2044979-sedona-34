@@ -714,7 +714,7 @@ body {
   outline: none;
 }
 
-.field {
+.long {
   align-self: center;
   padding-right: 42px;
 }
@@ -752,16 +752,16 @@ body {
   height: 25px;
   cursor: pointer;
   position: absolute;
-  left: 115px;
-  bottom: 24px;
+  left: 114px;
+  bottom: 16px;
 }
 
 .tooltip-icon {
-  width: 100%;
-  height: 100%;
-  padding: 8px 12px;
+  padding: 9px 12px;
   color: #ffffff;
   display: block;
+  width: 1px;
+  height: 9px;
 }
 
 .tooltip-toggle:hover {
