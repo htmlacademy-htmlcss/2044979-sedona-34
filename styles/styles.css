@@ -206,16 +206,15 @@ body {
   color: #000000;
 }
 
-.cover {
- color: #000000;
- background-color: #ffffff;
- background-image: url("../images/logo.jpg");
- background-size: 100%;
- background-repeat: no-repeat;
- text-align: center;
- height: 485px;
- width: 1200px;
-}
+.cover{
+  background-image: url("../images/divider.svg"), url("../images/logo.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 485px;
+  width: 1200px;
+  background-position: bottom;
+ }
 
 .main-index-sity {
   margin-top: 51px;
@@ -1560,7 +1559,7 @@ color: #000000;
 }
 
 .select-control:hover,
- .select-control:focus {
+.select-control:focus {
   border: 2px solid #83B3D3;
   border-radius: 4px;
 }
@@ -1787,6 +1786,21 @@ color: #000000;
   border-radius: 4px;
 }
 
+.stars{
+  background-image: url("../images/star.svg");
+  align-self: center;
+  width: 89px;
+  height: 17px;
+  background-repeat: space;
+}
+
+.stars-three {
+  width: 66px;
+}
+.stars-two {
+  width: 46px;
+}
+
 .rating {
   display: flex;
   font-family: 'PT Sans', sans-serif;
@@ -1799,7 +1813,7 @@ color: #000000;
   font-weight: 400px;
   font-size: 16px;
   line-height: 20px;
-  width: 160px;
+  width: 143px;
   height: 37px;
   border-radius: 4px;
   justify-content: center;
