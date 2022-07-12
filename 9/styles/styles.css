@@ -765,8 +765,8 @@ body {
   height: 25px;
   cursor: pointer;
   position: absolute;
-  left: 114px;
-  bottom: 16px;
+  left: 97px;
+  bottom: 17px;
 }
 
 .tooltip-icon {
@@ -795,10 +795,10 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 15px 18px 18px 18px;
   border-radius: 10px;
   display: block;
-  width: 256px;
+  width: 167px;
   position: absolute;
   display: none;
 }
@@ -1002,8 +1002,8 @@ color: #000000;
 }
 
 .fastener.modal-submit {
-  width: 588px;
-  padding: 14px 50px;
+  width: 575px;
+  padding: 13px 74px;
   font-size: 20px;
   line-height: 36px;
   border-radius: 10px;
@@ -1011,6 +1011,7 @@ color: #000000;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
+  margin-left: 67px;
 }
 
 .fastener.modal-submit:hover,
