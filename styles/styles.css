@@ -458,7 +458,7 @@ body {
   margin-left: 200px;
   }
 
-.field {
+.email {
   min-width: 600px;
   height: 60px;
   margin: 0;
@@ -619,7 +619,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 62px;
+  padding: 64px;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -633,9 +633,9 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 54px;
-  right: 70px;
-  width: 53px;
+  top: 55px;
+  right: 69px;
+  width: 54px;
   height: 53px;
   background-color: #f2f2f2;
   border-radius: 50%;
@@ -644,6 +644,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  justify-content: center;
 }
 
 .modal-close-button:hover,
@@ -662,7 +663,7 @@ body {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 63px;
+  margin-bottom: 59px;
   font-family: PT Sans, sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -673,7 +674,7 @@ body {
 
 .auth-form .field-group {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 
 .field-group {
@@ -684,14 +685,16 @@ body {
 
 .auth-date {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .auth-form-field {
-  width: 420px;
-  padding: 15px 19px;
+  width: 384px;
+  padding: 13px 17px;
   border-radius: 4px;
   border: none;
-  background: url("../images/calendar.svg") no-repeat right 17px center #f2f2f2;
+  background: url("../images/calendar.svg") no-repeat right 20px center #f2f2f2;
   font-size: 18px;
   line-height: 21px;
   font-family: PT Sans, sans-serif;
@@ -717,6 +720,7 @@ body {
 .long {
   align-self: center;
   padding-right: 42px;
+  margin-bottom: -6px;
 }
 
 .position {
@@ -724,21 +728,30 @@ body {
 }
 
 .text-form {
+  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   position: absolute;
-  bottom: -30px;
+  bottom: -33px;
   left: 26%;
+  color: #333333;
+  margin-left: 7px;
 }
 
-.text-form.red {
-  top: 42%;
+.text-form-red {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  margin-top: -30px;
   color: #ff5757;
+  margin-left: 160px;
 }
 
 .group-choice {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
+  justify-content: center;
 }
 
 .tooltip-toggle {
@@ -809,8 +822,8 @@ body {
 }
 
 .form-field {
-  width: 13px;
-  padding: 15px 60px;
+  width: 18px;
+  padding: 14px 60px;
   font-size: 18px;
   line-height: 21px;
   color: #000;
@@ -819,6 +832,28 @@ body {
   background-color: #f2f2f2;
   cursor: pointer;
   text-align: center;
+}
+
+.form-field::before {
+  content: "";
+  position: absolute;
+  color: #ffffff;
+  top: 15px;
+  right: 20px;
+  font-size: 18px;
+  line-height: 21px;
+  opacity: 30%;
+}
+
+.form-field::after {
+  content: "";
+  position: absolute;
+  color: #ffffff;
+  top: 15px;
+  left: 100px;
+  font-size: 18px;
+  line-height: 21px;
+  opacity: 30%;
 }
 
 .adults {
@@ -854,8 +889,8 @@ body {
 .field-adults::after {
   content: "";
   position: absolute;
-  width: 13px;
-  height: 1px;
+  width: 29px;
+  height: -5px;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 5;
   top: 50%;
@@ -893,6 +928,7 @@ color: #000000;
   right: 6%;
 }
 
+
 .child::before {
   transform: rotate(90deg);
 }
@@ -927,24 +963,24 @@ color: #000000;
 }
 
 .field-adults {
-  padding-right: 50px;
+  padding-right: 67px;
 }
 
 .field-child {
-  padding-right: 22px;
-  padding-left: 30px;
+  padding-right: 24px;
+  padding-left: 21px;
 }
 
-.button.button-minus {
+.fastener.button-minus {
   position: absolute;
   z-index: 1;
-  transform: translate(15px, 15px);
+  transform: translate(21px, 15px);
   background-color: transparent;
   border: none;
   padding: 9px;
 }
 
-.button.button-plus {
+.fastener.button-plus {
   position: absolute;
   z-index: 1;
   transform: translate(-35px, 15px);
@@ -953,47 +989,39 @@ color: #000000;
   padding: 9px;
 }
 
-.button.button-plus:hover,
-.button.button-minus:hover {
+.fastener.button-plus:hover,
+.fastener.button-minus:hover {
   background-color: transparent;
 }
 
-.button.button-plus:focus,
-.button.button-minus:focus {
+.fastener.button-plus:focus,
+.fastener.button-minus:focus {
   border: 3px solid #83b3d3;
   background-color: transparent;
   outline: none;
 }
 
-.button.modal-submit {
-  width: 575px;
-  padding: 12px 26px;
+.fastener.modal-submit {
+  width: 588px;
+  padding: 14px 50px;
   font-size: 20px;
   line-height: 36px;
   border-radius: 10px;
   background-color: #83b3d3;
   border: none;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
-.button.modal-submit:hover,
-.button.modal-submit:active {
+.fastener.modal-submit:hover,
+.fastener.modal-submit:active {
   background-color: #68a2ca;
 }
 
-.button.modal-submit:focus {
+.fastener.modal-submit:focus {
   outline: 3px solid #756257;
   background-color: #68a2ca;
 }
-
-
-
-
-
-
-
-
-
-
 
 .main-inner{
   list-style: none;
