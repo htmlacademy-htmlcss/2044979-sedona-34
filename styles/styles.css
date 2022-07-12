@@ -156,9 +156,9 @@ body {
 .like {
   position: absolute;
   top: 2px;
-  width: 20px;
+  width: 22px;
   height: 20px;
-  left: 20px;
+  left: 22px;
   font-size: 10px;
   vertical-align: middle;
   line-height: 20px;
@@ -186,7 +186,7 @@ body {
   line-height: 20px;
   border-radius: 4px;
   width: 160px;
-  height: 37px;
+  height: 38px;
   text-transform: uppercase;
 }
 
@@ -286,11 +286,11 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .advantages-description-num{
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .advantages-description{
@@ -331,7 +331,7 @@ body {
 .item-food,
 .item-souvenir {
   background-repeat: no-repeat;
-  background-position: center 81px;
+  background-position: center 75px;
   padding-top: 182px;
   min-height: 200px;
 }
@@ -356,7 +356,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 91px;
+  margin-top: 93px;
   margin-bottom: 29px;
 }
 
@@ -460,9 +460,9 @@ body {
 
 .email {
   min-width: 600px;
-  height: 60px;
+  height: 59px;
   margin: 0;
-  padding: 20px 0 19px 22px;
+  padding: 19px 0 20px 22px;
   border-radius: 10px 0 0 10px;
   box-sizing: border-box;
   border: 0;
@@ -490,7 +490,7 @@ body {
   color: #ffffff;
   border-radius: 0 10px 10px 0;
   border: none;
-  padding: 12px 15px;
+  padding: 15px 20px;
 }
 
 .newsletter-button:hover {
@@ -506,13 +506,13 @@ body {
 .footer-social {
   display: flex;
   align-items: center;
-  padding: 42px 0px;
+  padding: 31px 0px;
 }
 
 .footer-social-list {
   display: flex;
-  width: 200px;
-  margin-right: 52px;
+  width: 160px;
+  margin-right: 62px;
   text-align: center;
   align-items: center;
   height: 17px;
@@ -522,7 +522,7 @@ body {
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
-  margin-left: 81px;
+  margin-left: 69px;
 }
 
 .button-social {
@@ -541,11 +541,12 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
-  height: 50px;
+  height: 51px;
   width: 720px;
   text-decoration: none;
-  margin-right: 33px;
+  margin-right: 32px;
   font-style: normal;
+  padding-top: 17px;
 }
 
 .footer-icon{
@@ -580,8 +581,8 @@ body {
 
 .footer-item {
   display: flex;
-  width: 115px;
-  margin-left: 53px;
+  width: 127px;
+  margin-left: 55px;
   margin-right: 72px;
 }
 
@@ -663,13 +664,14 @@ body {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 59px;
+  margin-bottom: 63px;
   font-family: PT Sans, sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  margin-left: 3px;
 }
 
 .auth-form .field-group {
@@ -720,7 +722,7 @@ body {
 .long {
   align-self: center;
   padding-right: 42px;
-  margin-bottom: -6px;
+  margin-bottom: -8px;
 }
 
 .position {
@@ -735,7 +737,7 @@ body {
   bottom: -33px;
   left: 26%;
   color: #333333;
-  margin-left: 7px;
+  margin-left: 8px;
 }
 
 .text-form-red {
@@ -743,7 +745,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   position: absolute;
-  margin-top: -30px;
+  margin-top: -32px;
   color: #ff5757;
   margin-left: 160px;
 }
@@ -765,8 +767,8 @@ body {
   height: 25px;
   cursor: pointer;
   position: absolute;
-  left: 97px;
-  bottom: 17px;
+  left: 110px;
+  bottom: 11px;
 }
 
 .tooltip-icon {
@@ -963,12 +965,12 @@ color: #000000;
 }
 
 .field-adults {
-  padding-right: 67px;
+  padding-right: 56px;
 }
 
 .field-child {
-  padding-right: 24px;
-  padding-left: 21px;
+  padding-right: 21px;
+  padding-left: 27px;
 }
 
 .fastener.button-minus {
@@ -987,6 +989,7 @@ color: #000000;
   background-color: transparent;
   border: none;
   padding: 9px;
+  margin-top: -3px;
 }
 
 .fastener.button-plus:hover,
@@ -1003,7 +1006,7 @@ color: #000000;
 
 .fastener.modal-submit {
   width: 575px;
-  padding: 13px 74px;
+  padding: 12px 74px;
   font-size: 20px;
   line-height: 36px;
   border-radius: 10px;
@@ -1011,7 +1014,6 @@ color: #000000;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
-  margin-left: 67px;
 }
 
 .fastener.modal-submit:hover,
@@ -1211,7 +1213,7 @@ color: #000000;
 
 .caption-mark {
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -1264,7 +1266,6 @@ color: #000000;
   outline: 3px solid #83b3d3;
 }
 
-
 .caption-type{
   font-size: 18px;
   line-height: 21px;
@@ -1288,7 +1289,7 @@ color: #000000;
   font-weight: 700;
   padding: 0;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
 }
 
 .control-input {
@@ -1347,8 +1348,8 @@ color: #000000;
   flex-grow: 0;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
-  margin-left: 175px;
+  margin-top: 38px;
+  margin-left: 138px;
 }
 
 .range{
@@ -1366,8 +1367,8 @@ color: #000000;
   content: "до";
   position: absolute;
   color: #ffffff;
-  top: 15px;
-  right: 20px;
+  top: 11px;
+  right: 26px;
   font-size: 18px;
   line-height: 21px;
   opacity: 30%;
@@ -1376,8 +1377,8 @@ color: #000000;
   content: "от";
   position: absolute;
   color: #ffffff;
-  top: 15px;
-  left: 100px;
+  top: 13px;
+  left: 112px;
   font-size: 18px;
   line-height: 21px;
   opacity: 30%;
@@ -1395,7 +1396,7 @@ color: #000000;
 
 .range-input{
   width: 144px;
-  padding: 14px 17px;
+  padding: 11px 16px;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #ffffff;
@@ -1425,7 +1426,6 @@ color: #000000;
   border-radius: 0 4px 4px 0;
   box-sizing: border-box;
 }
-
 
 .range-scale {
   position: relative;
@@ -1479,7 +1479,7 @@ color: #000000;
   min-width: 160px;
   padding: 14px 15px;
   border: none;
-  margin: 60px 0 20px 70px;
+  margin: 85px 0 -13px 55px;
 }
 
 .button-submit {
@@ -1552,9 +1552,9 @@ color: #000000;
   display: flex;
   align-items: center;
   color: #333333;
-  margin-top: 54px;
-  margin-bottom: 60px;
-  margin-left: 72px;
+  margin-top: 62px;
+  margin-bottom: 57px;
+  margin-left: 71px;
   margin-right: 71px;
   width: 1057px;
   height: 48px;
@@ -1572,6 +1572,11 @@ color: #000000;
 }
 
 .select-control {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   background-image: url("../images/vectortop.svg");
   background-repeat: no-repeat;
   background-position: 254px 20px;
@@ -1703,7 +1708,7 @@ color: #000000;
   display: grid;
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 300px;
+  width: 303px;
   height: 211px;
 }
 
@@ -1716,7 +1721,7 @@ color: #000000;
   margin: 0;
   padding: 0;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
   list-style: none;
   list-style-type: none;
 }
@@ -1852,6 +1857,7 @@ color: #000000;
 .pagination-container {
   display: flex;
   align-items: center;
+  padding-top: 12px;
 }
 
 .pagination-active {
@@ -1913,6 +1919,7 @@ color: #000000;
   list-style: none;
   margin-left: 73px;
   margin-right: 300px;
+  margin-bottom: 5px;
 }
 
 .pagination-link {
@@ -1959,6 +1966,7 @@ color: #000000;
   padding: 0;
   margin: 0;
   margin-right: 51px;
+  padding-top: 13px;
 }
 
 .sorting-select {
@@ -1997,7 +2005,7 @@ color: #000000;
   justify-content: center;
   background-repeat: no-repeat;
   background-color: #ffffff;
-  padding-top: 94px;
+  padding-top: 84px;
 }
 
 .newsletter-catalog-title {
@@ -2009,7 +2017,8 @@ color: #000000;
   text-transform: uppercase;
   color: #000000;
   justify-content: center;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
+  padding-top: 9px;
 }
 
 .newsletter-catalog-subtitle {
