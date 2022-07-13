@@ -460,7 +460,7 @@ body {
 
 .email {
   min-width: 600px;
-  height: 59px;
+  height: 60px;
   margin: 0;
   padding: 19px 0 20px 22px;
   border-radius: 10px 0 0 10px;
@@ -506,7 +506,7 @@ body {
 .footer-social {
   display: flex;
   align-items: center;
-  padding: 31px 0px;
+  padding: 32px 0px;
 }
 
 .footer-social-list {
@@ -522,7 +522,7 @@ body {
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
-  margin-left: 69px;
+  margin-left: 80px;
 }
 
 .button-social {
@@ -530,7 +530,7 @@ body {
   flex-wrap: wrap;
   background-repeat: no-repeat;
   min-width: 22px;
-  min-height: 17px;
+  min-height: 16px;
   fill: #83B3D3;
   display: block;
 }
@@ -544,9 +544,9 @@ body {
   height: 51px;
   width: 720px;
   text-decoration: none;
-  margin-right: 32px;
+  margin-right: 18px;
   font-style: normal;
-  padding-top: 17px;
+  padding-top: 13px;
 }
 
 .footer-icon{
@@ -582,8 +582,8 @@ body {
 .footer-item {
   display: flex;
   width: 127px;
-  margin-left: 55px;
-  margin-right: 72px;
+  margin-left: 56px;
+  margin-right: 70px;
 }
 
 .logo-html {
@@ -591,6 +591,10 @@ body {
   fill: #000000;
   width: 115px;
   align-self: center;
+}
+
+.footer-logo{
+  margin-top: 10px
 }
 
 .footer-logo:hover > .logo-html {
@@ -963,23 +967,33 @@ color: #000000;
   padding-left: 27px;
 }
 
-.fastener.button-minus {
-  position: absolute;
-  z-index: 1;
-  transform: translate(21px, 15px);
-  background-color: transparent;
-  border: none;
-  padding: 9px;
-}
-
 .fastener.button-plus {
   position: absolute;
   z-index: 1;
-  transform: translate(-35px, 15px);
+  transform: translate(-34px, 15px);
   background-color: transparent;
   border: none;
-  padding: 9px;
-  margin-top: -3px;
+  padding: 8px;
+}
+
+.fastener.button-minus {
+  position: absolute;
+  z-index: 1;
+  transform: translate(20px, 21px);
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+}
+
+.fastener.button-plus{
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+}
+
+
+.fastener.button-minus{
+  background-image: url("../images/minus.svg");
+  background-repeat: no-repeat;
 }
 
 .fastener.button-plus:hover,
@@ -1734,6 +1748,7 @@ color: #000000;
 }
 
 .navigation-link-more {
+  text-transform: uppercase;
   text-align: center;
   background: #756157;
   color: #ffffff;
@@ -1805,6 +1820,7 @@ color: #000000;
 }
 
 .button-favorites {
+  text-transform: uppercase;
   font-family: 'PT Sans';
   background: #82B3D3;
   color: #ffffff;
@@ -1818,9 +1834,11 @@ color: #000000;
   margin-left: 13px;
   width: 140px;
   height: 37px;
+  margin-top: 1px;
 }
 
 .button-favorites-like {
+  text-transform: uppercase;
   font-family: 'PT Sans';
   align-items: center;
   text-align: center;
@@ -1831,9 +1849,10 @@ color: #000000;
   justify-content: center;
   border: none;
   border-radius: 4px;
-  margin-left: 13px;
+  margin-left: 12px;
   width: 140px;
   height: 37px;
+  margin-top: 1px;
 }
 
 .stars{
@@ -1863,7 +1882,7 @@ color: #000000;
   font-weight: 400px;
   font-size: 16px;
   line-height: 20px;
-  width: 143px;
+  width: 140px;
   height: 37px;
   border-radius: 4px;
   justify-content: center;
