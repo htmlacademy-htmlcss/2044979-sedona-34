@@ -29,14 +29,14 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-search" href="#">
+            <a class="navigation-link navigation-link-icon navigation-link-search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-favorite" href="#">
+            <a class="navigation-link navigation-link-icon navigation-link-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="like">12</span>
             </a>
@@ -57,11 +57,11 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false width=" 13" height="13"
+              <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="13" height="13"
                 viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="m.162 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"
-                  fill="" />
+                  fill="#" />
               </svg>
               <span class="visually-hidden">Главная</span>
             </a>
@@ -74,66 +74,91 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
           <div class="filter-group-list">
             <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
-                <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Бассейн">
-                    Бассейн
+                  <label class="control control-infrastructure">
+                    <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                    <span class="caption-mark"></span>
+                    <span class="caption-type">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Парковка">
-                    Парковка
+                  <label class="control control-infrastructure">
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="caption-mark"></span>
+                    <span class="caption-type">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
-                    Wi-Fi
+                  <label class="control control-infrastructure">
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <span class="caption-mark"></span>
+                    <span class="caption-type">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-type">
-              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-view">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Гостиница">
-                    Гостиница
+                    <input class="visually-hidden control-input housing-input" type="radio" name="housing"
+                      value="hotels" checked>
+                    <span class="caption-mark area"></span>
+                    <span class="caption-type">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Мотель" checked>
-                    Мотель
+                    <input class="visually-hidden control-input housing-input" type="radio" name="housing"
+                      value="motel">
+                    <span class="caption-mark area"></span>
+                    <span class="caption-type">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Апартаменты">
-                    Апартаменты
+                    <input class="visually-hidden control-input housing-input" type="radio" name="housing"
+                      value="apartments">
+                    <span class="caption-mark area"></span>
+                    <span class="caption-type">Апартаменты</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <fieldset class="catalog-filter-price">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <p class="catalog-filter-title">
-              <label class="form-label"></label>
-              <input type="number" id="form-label" name="appointment-price" placeholder="0 от">
-            </p>
-            <p class="catalog-filter-title">
-              <label class="form-label" for="catalog-filter"></label>
-              <input type="number" id="catalog-filter" name="appointment-price" placeholder="9000 до">
-            </p>
-          </fieldset>
-          <div class="button-filter">
-            <button class="button-social button-submit" type="submit">Применить</button>
-            <button class="button-reset" type="reset">Сбросить</button>
+          <div class="wrapper">
+            <fieldset class="catalog-filter-price">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <div class="range">
+                <div class="range-wrapper">
+                  <label class="form-label">
+                    <input class="range-input input-min" type="number" min="0" value="0" name="min-price">
+                    <span class="visually-hidden">Минимальная цена</span>
+                  </label>
+                  <label class="form-label">
+                    <input class="range-input input-max" type="number" min="9000" value="9000" name="max-price">
+                    <span class="visually-hidden">Максимальная цена</span>
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="right: 61px; width: 228px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="button-filter">
+              <button class="button-social button-submit" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
+            </div>
           </div>
         </form>
       </section>
@@ -141,17 +166,20 @@
         <div class="sorting-container">
           <h2 class="inner-header-catalog">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
-            <option value="select-control-popular">Сначала дешёвые</option>
+            <option value="select-control-popular">Сначала дешевые</option>
             <option value="select-control-cheap">Сначала популярные</option>
             <option value="select-control-expensive">Сначала дорогие</option>
           </select>
           <ol class="breadcrumb-view">
             <li class="breadcrumb-switcer">
               <a class="card-grid-toggle card-grid-toggle-current toggle-cards" href="#">
+                <span class="visually-hidden">Показать таблицу</span>
               </a>
               <a class="card-grid-toggle toggle-list" href="#">
+                <span class="visually-hidden">Показать слайд-шоу</span>
               </a>
               <a class="card-grid-toggle toggle-alone" href="#">
+                <span class="visually-hidden">Показать список</span>
               </a>
             </li>
           </ol>
@@ -166,15 +194,10 @@
             <div class="hotel-info">
               <p class="product-card-hotel">Гостиница</p>
               <p class="product-card-price"> От 4000 ₽</p>
-              <a class="button navigation-link-more" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-favorites" type="submit">В ИЗБРАННОЕ</button>
-              <div class="star">
-                <a class="star-raiting">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                </a>
+              <a class="button navigation-link-more" href="#">Подробнее</a>
+              <button class="button-favorites" type="submit">В Избранное</button>
+              <div class="stars stars-amara">
+                <span class="visually-hidden">4 звезды</span>
               </div>
               <div class="rating">Рейтинг: 8,5</div>
             </div>
@@ -188,15 +211,10 @@
             <div class="hotel-info">
               <p class="product-card-hotel">Гостиница</p>
               <p class="product-card-price">От 5000 ₽</p>
-              <a class="button navigation-link-more" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-favorites-like" type="submit">В ИЗБРАННОМ</button>
-              <div class="star">
-                <a class="star-raiting">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                </a>
+              <a class="button navigation-link-more" href="#">Подробнее</a>
+              <button class="button-favorites-like" type="submit">В Избранном</button>
+              <div class="stars stars-villas">
+                <span class="visually-hidden">4 звезды</span>
               </div>
               <div class="rating">Рейтинг: 9,2</div>
             </div>
@@ -210,14 +228,10 @@
             <div class="hotel-info">
               <p class="product-card-hotel">Гостиница</p>
               <p class="product-card-price">От 2500 ₽</p>
-              <a class="button navigation-link-more" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-favorites" type="submit">В ИЗБРАННОМ</button>
-              <div class="star">
-                <a class="star-raiting">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                </a>
+              <a class="button navigation-link-more" href="#">Подробнее</a>
+              <button class="button-favorites" type="submit">В Избранное</button>
+              <div class="stars stars-three">
+                <span class="visually-hidden">3 звезды</span>
               </div>
               <div class="rating">Рейтинг: 6,9</div>
             </div>
@@ -230,13 +244,10 @@
             <div class="hotel-info">
               <p class="product-card-hotel">Гостиница</p>
               <p class="product-card-price">От 1500 ₽</p>
-              <a class="button navigation-link-more" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-favorites" type="submit">В ИЗБРАННОЕ</button>
-              <div class="star">
-                <a class="star-raiting">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                  <img class="star-image" alt="Звезда" src="images/star.svg" width="18px" height="17px">
-                </a>
+              <a class="button navigation-link-more" href="#">Подробнее</a>
+              <button class="button-favorites" type="submit">В Избранное</button>
+              <div class="stars stars-two">
+                <span class="visually-hidden">2 звезды</span>
               </div>
               <div class="rating">Рейтинг: 5,0</div>
             </div>
@@ -277,15 +288,14 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="newsletter-catalog-subtitle">Только полезная информация и никакого спама, <br>честное
               бойскаутское!</p>
-            <label for="newsletter-email"></label>
+            <label class="visually-hidden" for="subscribed">Ваш e-mail</label>
             <div class="newsletter-field">
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              <input class="email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                 required>
               <button class="newsletter-button">Подписаться</button>
             </div>
           </form>
         </div>
-      </section>
       </section>
     </main>
     <footer class="footer-social">
@@ -335,6 +345,7 @@
               d="M0 13.9v2.6h2.5v-2.6H0ZM11.6 5.5c-1.6 0-2.8.7-3.6 1.7h-.1V1h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.8h-4.8V2.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V7.8h4.8v-2ZM41.1 5.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V5.8H29v10.6h2V11c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V9.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V1h-2v12.7ZM28.9 20.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 23c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V23ZM55.1 20.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V14.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 28l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
               fill="" />
           </svg>
+          <span class="visually-hidden">Аккадемия</span>
         </a>
       </address>
     </footer>
