@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+  <title>Официальный сайт города Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sedona</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -101,17 +103,17 @@
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая <br>площадь</h3>
-            <p class="advantages-description advantages-description-num">&#8212№3&#8212</p>
+            <p class="advantages-description advantages-description-num">&#8212;№3&#8212;</p>
             <p class="advantages-description">Все достопримечательности <br>находятся очень близко</p>
           </li>
           <li class="advantages-item advantages-item-dark">
             <h3 class="advantages-title">Красивая <br>дорога</h3>
-            <p class="advantages-description advantages-description-num">&#8212№4&#8212</p>
+            <p class="advantages-description advantages-description-num">&#8212;№4&#8212;</p>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса <br>совсем не скучно!</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Мало<br>туристов</h3>
-            <p class="advantages-description advantages-description-num">&#8212№5&#8212</p>
+            <p class="advantages-description advantages-description-num">&#8212;№5&#8212;</p>
             <p class="advantages-description">Большинство едет в Гранд <br>Каньон и толпится там</p>
           </li>
         </ul>
@@ -124,18 +126,16 @@
         <button class="button-search">Поиск гостиницы в Седоне</button>
       </section>
       <section class="newsletter">
-        <div class="newsletter-interest">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="newsletter-subtitle">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-            <label class="visually-hidden" for="subscribed">Ваш e-mail</label>
-            <div class="newsletter-field">
-              <input class="email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-                required>
-              <button class="newsletter-button">Подписаться</button>
-            </div>
-          </form>
-        </div>
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="newsletter-subtitle">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+          <div class="newsletter-field">
+            <input class="email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              required>
+            <span class="visually-hidden">Ваш e-mail</span>
+            <button class="newsletter-button">Подписаться</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="footer-social">
@@ -220,7 +220,7 @@
               <label class="information field-adults" for="adults">Взрослые:</label>
               <button class="fastener button-minus" type="button">
               </button>
-              <input class="form-field" type="number" min="1" name="adults" id="adults" placeholder="2">
+              <input class="form-field" type="number" min="2" name="adults" id="adults" placeholder="2">
               <button class="fastener button-plus" type="button">
               </button>
             </div>
@@ -244,14 +244,15 @@
                       </defs>
                     </svg>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей,<br>которые будут с
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей,<br>которые
+                    будут с
                     вами, возраст<br>которых от 6 до 18
                     лет. Дети<br> до 6 лет размещаются<br>бесплатно.</span>
                 </span>
               </span>
               <button class="fastener button-minus" type="button">
               </button>
-              <input class="form-field" type="number" min="0" name="child" id="child" placeholder="0">
+              <input class="form-field" type="number" min="1" name="child" id="child" placeholder="1">
               <button class="fastener button-plus" type="button">
               </button>
             </div>
