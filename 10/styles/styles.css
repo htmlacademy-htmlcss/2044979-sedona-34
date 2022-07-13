@@ -1250,7 +1250,8 @@ body {
   background: url("../images/check.svg");
   background-repeat: no-repeat;
   background-size: 15px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .control-input[type="radio"] + .caption-mark {
@@ -1341,7 +1342,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1358,7 +1360,8 @@ body {
   border-right: none;
   background-color: transparent;
   color: #ffffff;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-wrapper:hover,
@@ -1544,7 +1547,8 @@ body {
   background-position: 254px 20px;
   width: 287px;
   height: 48px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin-right: 81px;
   margin-left: 191px;
   border-radius: 4px;
@@ -1939,7 +1943,8 @@ body {
   background-image: url("../images/vectortop.svg");
   background-repeat: no-repeat;
   background-position: 126px 20px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   width: 160px;
   height: 48px;
   border-radius: 4px;
@@ -1983,4 +1988,3 @@ body {
   margin-bottom: 46px;
   margin-top: 29px;
 }
-
