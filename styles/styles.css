@@ -841,6 +841,17 @@ body {
   text-align: center;
 }
 
+form-field::-webkit-outer-spin-button,
+form-field::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+form-field[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
 .form-field::before {
   position: absolute;
   color: #ffffff;
@@ -989,7 +1000,6 @@ color: #000000;
   background-image: url("../images/plus.svg");
   background-repeat: no-repeat;
 }
-
 
 .fastener.button-minus{
   background-image: url("../images/minus.svg");
