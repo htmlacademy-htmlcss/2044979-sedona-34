@@ -175,8 +175,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   border-radius: 4px;
-  width: 160px;
-  height: 38px;
+  min-width: 160px;
+  min-height: 39px;
   text-transform: uppercase;
 }
 
@@ -206,6 +206,7 @@ body {
   height: 485px;
   width: 1200px;
   background-position: bottom;
+  background: rgba(131, 179, 211, 0.2);
 }
 
 .main-index-sity {
@@ -300,7 +301,7 @@ body {
   width: 400px;
   min-height: 281px;
   background-color: rgba(131, 179, 211, 0.12);
-  padding-top: 102px;
+  padding-top: 105px;
 }
 
 .advantages-item-dark {
@@ -348,7 +349,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 93px;
+  margin-top: 90px;
   margin-bottom: 29px;
 }
 
@@ -375,15 +376,15 @@ body {
   font-weight: 700px;
   font-size: 20px;
   line-height: 36px;
-  width: 574px;
-  height: 60px;
+  min-width: 574px;
+  min-height: 59px;
   border-radius: 4px;
   margin: 0 auto;
   justify-content: center;
   border: none;
   margin-bottom: 93px;
   padding: 12px 15px;
-  margin-top: 56px;
+  margin-top: 50px;
 }
 
 .button-search:hover {
@@ -427,7 +428,7 @@ body {
   color: #ffffff;
   justify-content: center;
   margin-bottom: 29px;
-  padding-top: 94px;
+  padding-top: 92px;
   margin-top: 0;
 }
 
@@ -453,9 +454,9 @@ body {
 
 .email {
   min-width: 600px;
-  height: 60px;
+  height: 61px;
   margin: 0;
-  padding: 19px 0 20px 22px;
+  padding: 19px 0 18px 21px;
   border-radius: 10px 0 0 10px;
   box-sizing: border-box;
   border: 0;
@@ -463,6 +464,10 @@ body {
   line-height: 21px;
   background-color: #ffffff;
   font-family: inherit;
+}
+
+.email-catalog {
+  background: #f2f2f2;
 }
 
 .newsletter-button {
@@ -476,11 +481,12 @@ body {
   justify-content: center;
   background: #82b3d3;
   width: 200px;
-  height: 60px;
+  min-height: 61px;
   color: #ffffff;
   border-radius: 0 10px 10px 0;
   border: none;
-  padding: 15px 20px;
+  padding: 6px 20px;
+  overflow-wrap: anywhere;
 }
 
 .newsletter-button:hover {
@@ -498,7 +504,7 @@ body {
 .footer-social {
   display: flex;
   align-items: center;
-  padding: 32px 0;
+  padding: 31px 0;
 }
 
 .footer-social-list {
@@ -532,8 +538,8 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
-  height: 51px;
-  width: 720px;
+  min-height: 52px;
+  min-width: 705px;
   text-decoration: none;
   margin-right: 18px;
   font-style: normal;
@@ -577,8 +583,8 @@ body {
 .footer-item {
   display: flex;
   width: 127px;
-  margin-left: 56px;
-  margin-right: 70px;
+  margin-left: 32px;
+  margin-right: 77px;
 }
 
 .logo-html {
@@ -589,7 +595,7 @@ body {
 }
 
 .footer-logo {
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 .footer-logo:hover > .logo-html {
@@ -1107,8 +1113,8 @@ body {
 .breadcrumbs-link-icon {
   background-image: url("../images/vectorright.svg");
   background-repeat: no-repeat;
-  padding-left: 20px;
-  background-position: 2px 6px;
+  padding-left: 17px;
+  background-position: 2px 5px;
 }
 
 .breadcrumbs-link:hover > .breadcrumbs-icon {
@@ -1135,6 +1141,7 @@ body {
   height: 288px;
   background-repeat: no-repeat;
   padding: 35px 70px 79px;
+  background: #756157;
 }
 
 .catalog-filter {
@@ -1175,7 +1182,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   text-align: left;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   padding: 0;
 }
 
@@ -1184,6 +1191,8 @@ body {
   margin: 0;
   padding: 0;
   margin-top: -6px;
+  min-width: 145px;
+  min-height: 149px;
 }
 
 .filter-group-list {
@@ -1287,6 +1296,8 @@ body {
   margin: 0;
   list-style-type: none;
   margin-top: -6px;
+  min-width: 145px;
+  min-height: 149px;
 }
 
 .wrapper {
@@ -1352,8 +1363,8 @@ body {
 }
 
 .range-input {
-  width: 144px;
-  padding: 10px 15px;
+  width: 143px;
+  padding: 11px 13px;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #ffffff;
@@ -1397,6 +1408,7 @@ body {
 }
 
 .range-bar {
+  width: 226px;
   position: absolute;
   height: 4px;
   background-color: #ffffff;
@@ -1453,7 +1465,7 @@ body {
   font-weight: 700px;
   font-size: 16px;
   line-height: 20px;
-  width: 160px;
+  width: 157px;
   height: 48px;
   border-radius: 4px;
   justify-content: center;
@@ -1708,8 +1720,8 @@ body {
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
-  height: 37px;
-  width: 141px;
+  min-height: 37px;
+  min-width: 141px;
   text-decoration: none;
   border-radius: 4px;
   display: flex;
@@ -1775,8 +1787,7 @@ body {
   padding: 0;
   border-radius: 4px;
   margin-left: 13px;
-  width: 140px;
-  height: 37px;
+  min-width: 140px;
   margin-top: 1px;
 }
 
@@ -1793,8 +1804,8 @@ body {
   border: none;
   border-radius: 4px;
   margin-left: 12px;
-  width: 140px;
-  height: 37px;
+  min-width: 140px;
+  min-height: 37px;
   margin-top: 1px;
 }
 
@@ -1910,8 +1921,8 @@ body {
   font-weight: 700px;
   font-size: 20px;
   line-height: 36px;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 4px;
   margin: 0 auto;
   justify-content: center;
