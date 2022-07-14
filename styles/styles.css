@@ -376,15 +376,16 @@ body {
   font-weight: 700px;
   font-size: 20px;
   line-height: 36px;
-  min-width: 574px;
-  min-height: 59px;
+  width: 545px;
+  min-height: 33px;
   border-radius: 4px;
   margin: 0 auto;
   justify-content: center;
   border: none;
-  margin-bottom: 93px;
+  margin-bottom: 92px;
   padding: 12px 15px;
   margin-top: 50px;
+  text-decoration: none;
 }
 
 .button-search:hover {
@@ -428,7 +429,7 @@ body {
   color: #ffffff;
   justify-content: center;
   margin-bottom: 29px;
-  padding-top: 92px;
+  padding-top: 95px;
   margin-top: 0;
 }
 
@@ -454,9 +455,9 @@ body {
 
 .email {
   min-width: 600px;
-  height: 61px;
+  height: 60px;
   margin: 0;
-  padding: 19px 0 18px 21px;
+  padding: 20px 0 18px 22px;
   border-radius: 10px 0 0 10px;
   box-sizing: border-box;
   border: 0;
@@ -481,7 +482,7 @@ body {
   justify-content: center;
   background: #82b3d3;
   width: 200px;
-  min-height: 61px;
+  min-height: 60px;
   color: #ffffff;
   border-radius: 0 10px 10px 0;
   border: none;
@@ -543,7 +544,7 @@ body {
   text-decoration: none;
   margin-right: 18px;
   font-style: normal;
-  padding-top: 13px;
+  padding-top: 16px;
 }
 
 .footer-icon {
