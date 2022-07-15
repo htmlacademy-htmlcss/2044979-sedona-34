@@ -448,14 +448,14 @@ body {
 .newsletter-field {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   margin: 45px auto 94px;
   margin-left: 200px;
 }
 
 .email {
   min-width: 600px;
-  height: 60px;
+  min-height: 60px;
   margin: 0;
   padding: 20px 0 18px 22px;
   border-radius: 10px 0 0 10px;
@@ -505,7 +505,7 @@ body {
 .footer-social {
   display: flex;
   align-items: center;
-  padding: 31px 0;
+  padding: 27px 0;
 }
 
 .footer-social-list {
@@ -514,7 +514,7 @@ body {
   margin-right: 62px;
   text-align: center;
   align-items: center;
-  height: 17px;
+  height: 76px;
   padding: 0;
   gap: 26px;
   color: #000000;
@@ -1138,18 +1138,19 @@ body {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
-  width: 1060px;
-  height: 288px;
+  min-width: 1060px;
+  min-height: 288px;
   background-repeat: no-repeat;
-  padding: 35px 70px 79px;
+  padding: 35px 70px 15px;
   background: #756157;
+  background-size: cover;
 }
 
 .catalog-filter {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  width: 1059px;
+  min-width: 1059px;
   gap: 40px;
   flex-grow: 0;
   margin: 0;
@@ -1203,6 +1204,8 @@ body {
   list-style-type: none;
   margin-top: 40px;
   gap: 1px;
+  min-width: 365px;
+  min-height: 149px;
 }
 
 .catalog-filter-item {
@@ -1436,13 +1439,13 @@ body {
 }
 
 .toggle-min {
-  top: -8px;
+  top: -7px;
   left: 1px;
 }
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -9px;
 }
 
 .button-filter {
@@ -1531,10 +1534,10 @@ body {
   color: #333333;
   margin-top: 54px;
   margin-bottom: 58px;
-  margin-left: 71px;
+  margin-left: 73px;
   margin-right: 71px;
   width: 1057px;
-  height: 48px;
+  height: 49px;
 }
 
 .inner-header-catalog {
@@ -1546,7 +1549,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   width: 339px;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .select-control {
@@ -1681,7 +1684,7 @@ body {
   display: grid;
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 303px;
+  width: 302px;
   height: 211px;
 }
 
@@ -1838,8 +1841,8 @@ body {
   font-weight: 400px;
   font-size: 16px;
   line-height: 20px;
-  width: 140px;
-  height: 37px;
+  min-width: 140px;
+  min-height: 37px;
   border-radius: 4px;
   justify-content: center;
   border: none;
@@ -1997,6 +2000,6 @@ body {
   color: #000000;
   font-style: normal;
   justify-content: center;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
   margin-top: 29px;
 }
