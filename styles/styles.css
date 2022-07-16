@@ -206,7 +206,7 @@ body {
   height: 485px;
   width: 1200px;
   background-position: bottom;
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .main-index-sity {
@@ -1142,7 +1142,7 @@ body {
   min-height: 288px;
   background-repeat: no-repeat;
   padding: 35px 70px 15px;
-  background: #756157;
+  background-color: #756157;
   background-size: cover;
 }
 
