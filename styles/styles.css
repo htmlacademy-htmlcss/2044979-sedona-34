@@ -1140,6 +1140,7 @@ body {
   margin: 0;
   min-width: 1060px;
   min-height: 288px;
+  min-height: 288px;
   background-repeat: no-repeat;
   padding: 35px 70px 15px;
   background-color: #756157;
